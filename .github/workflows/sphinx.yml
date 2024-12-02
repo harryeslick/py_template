@@ -1,18 +1,33 @@
-name: Deploy Sphinx documentation to Pages
+name: Deploy MkDocs GitHub Pages
 
 on:
   push:
-    branches: [main] # branch to trigger deployment
+    branches:
+      - main
 
 jobs:
-  pages:
-    runs-on: ubuntu-20.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
     steps:
-    - id: deployment
-      uses: sphinx-notes/pages@v3
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install -e '.[docs]'
+
+      - name: Deploy
+        run: |
+          mkdocs gh-deploy --force
+
+
+        # uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # env:
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

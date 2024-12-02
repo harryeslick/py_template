@@ -1,29 +1,26 @@
 {
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange",
-    "git.autofetch": true,
+    "editor.tabSize": 4,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#2A5677"
+    },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "python.formatting.provider": "black",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.autoSearchPaths": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "pylint.args": [
-        "--rcfile=pyproject.toml"
-    ],
-    "black-formatter.args": [
-        "--config=pyproject.toml"
-    ],
-    "flake8.args": [
-        "--toml-config=pyproject.toml"
-    ],
-    "isort.args": [
-        "--settings-path=pyproject.toml"
+    "python.testing.cwd": "${workspaceFolder}/tests",
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
     ]
 }
