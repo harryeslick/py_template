@@ -1,10 +1,10 @@
 FROM python:3.12
 
-RUN python -m pip install --upgrade pip \
+WORKDIR /code
+COPY --link --chown=1000 . .
 
 
-COPY pyproject.toml .
-RUN touch README.md \
-    && mkdir -p src/python_package \
-    && python -m flit install --only-deps --deps develop \
-    && rm -r pyproject.toml README.md src
+RUN pip install --upgrade pip
+RUN pip install pytest pytest-cov pre-commit
+RUN pip install --no-cache-dir -e .
+RUN pre-commit install-hooks
