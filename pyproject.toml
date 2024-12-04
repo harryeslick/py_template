@@ -1,6 +1,5 @@
-
 [project]
-name = "py-project-toml"
+name = "py-project_template"
 authors = [{ name = "Harry Eslick", email = "harry.eslick@mmm.com" }]
 description = "Sample Python Project for creating a new Python Module"
 readme = "README.md"
@@ -20,6 +19,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "numpy>=2.1.3",
 ]
+
 [tool.rye]
 dev-dependencies = [
     "mkdocs-material>=9.5.47",

@@ -1,0 +1,14 @@
+bandit[toml]
+mkdocs-git-revision-date-plugin
+mkdocs-jupyter
+mkdocs-material
+mkdocstrings[python]
+plotly
+pre-commit
+pylint
+pylint_junit
+pytest
+pytest-cov
+pytest-github-actions-annotate-failures
+pytest-mock
+pytest-runner
