@@ -18,14 +18,14 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Sync dependencies
-        run: rye sync
+      # - name: Sync dependencies
 
       # - name: Lint
-        # run: rye lint
+      # run: rye lint
 
       - name: Deploy
         run: |
+          rye sync
           mkdocs gh-deploy --force
 
 

@@ -29,7 +29,9 @@
                 "charliermarsh.ruff",
                 "ryanluker.vscode-coverage-gutters",
                 "tamasfe.even-better-toml",
-                "GitHub.copilot"
+                "GitHub.copilot",
+                "ms-toolsai.jupyter",
+                "exodiusstudios.comment-anchors"
             ],
         // "settings": {
         //     "python.defaultInterpreterPath": "/usr/local/bin/python",
@@ -40,7 +42,12 @@
     "onCreateCommand": [
         "pre-commit install-hooks"
     ],
-    "postStartCommand": "pip install -r .devcontainer/dev_requirements.txt"
+    "postStartCommand": {
+        "commands": [
+            "pip install -r .devcontainer/dev_requirements.txt",
+            "pip install -e ."
+        ]
+    }
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
