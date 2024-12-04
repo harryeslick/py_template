@@ -26,6 +26,7 @@ jobs:
       - name: Deploy
         run: |
           rye sync
+          source .venv/bin/activate
           mkdocs gh-deploy --force
 
 
