@@ -7,6 +7,7 @@ It uses:
 - `mkdocs` for documentation with deployment via `gh_actions`
 - `pytest` with `pytest-cov` for code coverage
 -
+
 ## Project Organization
 
 - `.github/workflows`: Contains GitHub Actions used for building, testing, and publishing.
@@ -15,3 +16,5 @@ It uses:
 - `src`: Place new source code here.
 - `tests`: Contains tests using `pytest`
 - `pyproject.toml`: Contains metadata about the project and configurations for additional tools used to format, lint, type-check, and analyze Python code.
+
+This template was originally based on Based on template from [Microsoft](https://github.com/microsoft/python-package-template)
