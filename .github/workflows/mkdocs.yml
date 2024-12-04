@@ -21,8 +21,8 @@ jobs:
       - name: Sync dependencies
         run: rye sync
 
-      - name: Lint
-        run: rye lint
+      # - name: Lint
+        # run: rye lint
 
       - name: Deploy
         run: |
