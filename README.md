@@ -20,3 +20,10 @@ It uses:
 - `pyproject.toml`: Contains metadata about the project and configurations for additional tools used to format, lint, type-check, and analyze Python code.
 
 This template was originally based on Based on template from [Microsoft](https://github.com/microsoft/python-package-template)
+
+## Using this template
+
+- find and replace the project name `py_template` with new project name. 
+- rename the python module dir `./src/py_template/` to match .
+- update `docs/index.md`
+- replace readme text

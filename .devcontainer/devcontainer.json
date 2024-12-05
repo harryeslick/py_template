@@ -10,15 +10,12 @@
     // },
     "features": {
         // "ghcr.io/devcontainers/features/git-lfs:1": {},
-        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
         // "ghcr.io/devcontainers-extra/features/mkdocs:2": {},
         // "ghcr.io/devcontainers-extra/features/uv": {}
     },
     "customizations": {
         "vscode": {
-            "workbench.colorCustomizations": {
-                "titleBar.activeBackground": "#B267E6"
-            },
             "extensions": [
                 "editorconfig.editorconfig",
                 "github.vscode-pull-request-github",
@@ -32,11 +29,7 @@
                 "GitHub.copilot",
                 "ms-toolsai.jupyter",
                 "exodiusstudios.comment-anchors"
-            ],
-        // "settings": {
-        //     "python.defaultInterpreterPath": "/usr/local/bin/python",
-        //     "python.testing.pytestPath": "/usr/local/bin/pytest"
-        // }
+            ]
         }
     },
     "onCreateCommand": [
@@ -44,7 +37,6 @@
     ],
     "postStartCommand": [
         "./.devcontainer/postCreateCommand.sh"
-        // ".devcontainer/postCreateCommand.sh"
     ]
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},

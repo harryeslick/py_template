@@ -1,5 +1,5 @@
 [project]
-name = "py-project_template"
+name = "py_template"
 authors = [{ name = "Harry Eslick", email = "harry.eslick@mmm.com" }]
 description = "Sample Python Project for creating a new Python Module"
 readme = "README.md"
