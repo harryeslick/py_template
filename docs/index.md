@@ -11,7 +11,13 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Project layout
 
+```
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        # Other markdown pages, images and other files.
+        api_docs/
+            hello_world.md   # API docs are stored here
+        notebooks/
+            example.py  # ipynb notebooks are stored here for examples. 
+```

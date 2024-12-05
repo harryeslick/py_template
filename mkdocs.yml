@@ -63,7 +63,7 @@ nav:
 
   - Examples:
     - Notebooks:
-        - 1. Basic example: notebooks/example.py
+        - 1. Notebook example: notebooks/example.py
 
 extra_javascript:
   - https://cdn.plot.ly/plotly-2.32.0.min.js
