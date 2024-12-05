@@ -4,9 +4,11 @@ This is a repository template for building python projects.
 It uses:
 
 - `rye` for package and dependency management
+- `uv` is used for dependencies within the dev container, using the `rye` `requirements.lock` file
 - `mkdocs` for documentation with deployment via `gh_actions`
 - `pytest` with `pytest-cov` for code coverage
--
+- `pre-commit` used used to enforce code formatting using `ruff`, and spelling using `codespell`
+
 
 ## Project Organization
 
