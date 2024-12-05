@@ -27,3 +27,14 @@ This template was originally based on Based on template from [Microsoft](https:/
 - rename the python module dir `./src/py_template/` to match .
 - update `docs/index.md`
 - replace readme text
+- change workspace `titleBar.activeBackground` in `./.vscode/settings.json`
+
+## Installation
+### Local development
+- setup environment `rye sync`
+- setup pre-commit `pre-commit install-hooks`
+
+### Using VSCode DevContainer
+- open project folder in vscode
+- install VSCode Dev-container extension
+- run / Build Dev-container
