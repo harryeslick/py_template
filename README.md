@@ -26,6 +26,8 @@ This template was originally based on Based on template from [Microsoft](https:/
 - find and replace the project name `py_template` with new project name. 
 - rename the python module dir `./src/py_template/` to match .
 - update `docs/index.md`
+- remove `hello_world` from `docs/notebooks/example.py`
+- remove `hello_world` from `tests/`
 - replace readme text
 - change workspace `titleBar.activeBackground` in `./.vscode/settings.json`
 
