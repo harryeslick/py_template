@@ -33,8 +33,10 @@ This template was originally based on Based on template from [Microsoft](https:/
 
 ## Mkdocs
 
-To enable automatic deployment of documentation using [MkDocs](https://www.mkdocs.org), edit the GitHub settings > actions > Workflow permissions > allow `Read and write permissions`
-This is required to allow github actions to create a new branch to deploy the docs
+To enable automatic deployment of documentation using [MkDocs](https://www.mkdocs.org): 
+- edit the GitHub settings > actions > Workflow permissions > allow `Read and write permissions`
+  This is required to allow github actions to create a new branch to deploy the docs
+- got to setting > pages > set the pages branch to use the automatically generated `gh-pages` branch. 
 
 
 ## Installation
