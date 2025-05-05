@@ -31,6 +31,12 @@ This template was originally based on Based on template from [Microsoft](https:/
 - replace readme text
 - change workspace `titleBar.activeBackground` in `./.vscode/settings.json`
 
+## Mkdocs
+
+To enable automatic deployment of documentation using [MkDocs](https://www.mkdocs.org), edit the GitHub settings > actions > Workflow permissions > allow `Read and write permissions`
+This is required to allow github actions to create a new branch to deploy the docs
+
+
 ## Installation
 ### Local development
 - setup environment `rye sync`
