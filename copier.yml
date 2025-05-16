@@ -33,4 +33,9 @@ version:
   help: Initial version of the project
   default: 0.1.0
 
+date:
+  type: str
+  help: ISO date
+  default: 2025-05-16
+
 
