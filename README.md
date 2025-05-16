@@ -1,14 +1,16 @@
 # Python Project Template
 
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
+
 This is a repository template for building python projects.
 It uses:
 
+- [Copier](https://copier.readthedocs.io/) is used for templating
 - `rye` for package and dependency management
 - `uv` is used for dependencies within the dev container, using the `rye` `requirements.lock` file
 - `mkdocs` for documentation with deployment via `gh_actions`
 - `pytest` with `pytest-cov` for code coverage
 - `pre-commit` used used to enforce code formatting using `ruff`, and spelling using `codespell`
-
 
 ## Project Organization
 
@@ -23,28 +25,19 @@ This template was originally based on Based on template from [Microsoft](https:/
 
 ## Using this template
 
-- find and replace the project name `py_template` with new project name. 
-- rename the python module dir `./src/py_template/` to match .
-- update `docs/index.md`
-- remove `hello_world` from `docs/notebooks/example.py`
-- remove `hello_world` from `tests/`
-- replace readme text
+- If required, install `Copier` using `uv tool install copier`
+- Create new project from the template repo using `copier copy https://github.com/harryeslick/py_template path/to/destination`
 - change workspace `titleBar.activeBackground` in `./.vscode/settings.json`
 
-## Mkdocs
-
-To enable automatic deployment of documentation using [MkDocs](https://www.mkdocs.org): 
-- edit the GitHub settings > actions > Workflow permissions > allow `Read and write permissions`
-  This is required to allow github actions to create a new branch to deploy the docs
-- got to setting > pages > set the pages branch to use the automatically generated `gh-pages` branch. 
-
-
 ## Installation
+
 ### Local development
+
 - setup environment `rye sync`
 - setup pre-commit `pre-commit install-hooks`
 
 ### Using VSCode DevContainer
+
 - open project folder in vscode
 - install VSCode Dev-container extension
 - run / Build Dev-container
