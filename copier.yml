@@ -36,6 +36,6 @@ version:
 date:
   type: str
   help: ISO date
-  default: 2025-05-16
+  default: "2025-05-16"
 
 
